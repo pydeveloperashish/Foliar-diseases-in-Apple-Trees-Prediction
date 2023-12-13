@@ -24,4 +24,8 @@ def classify_image(test_image):
 gr.Interface(fn=classify_image,
              inputs=gr.Image(),
              outputs=gr.Label(num_top_classes = 3),
-             examples=["images/train/healthy/Train_2.jpg", "images/train/rust/Train_10.jpg", "images/train/scab/Train_16.jpg"]).launch()
+             examples=[os.path.join(os.getcwd(), 'samples', "Test_2.jpg"), 
+                       os.path.join(os.getcwd(), 'samples',  "Test_9.jpg"), 
+                       os.path.join(os.getcwd(), 'samples',  "Test_6.jpg")
+                      ]
+            ).launch()

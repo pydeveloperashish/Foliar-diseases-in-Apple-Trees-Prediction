@@ -2,4 +2,4 @@ venv
 images
 samples
 build
-./*
+your_project.egg-info
